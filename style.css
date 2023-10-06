@@ -1,6 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
+}
+.body {
+    font-family: "Montserrat", sans-serif;
 }
 .top {
     height: 1024px;
@@ -53,23 +57,23 @@ line-height: normal;
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
-.game {
+.link_game {
     height: 566px;
     background: #000915;
 }
-.img {
+.game_img {
     border-radius: 18px;
 }
-.container {
+.game {
     width: 379px;
     height: 300px;
     position: relative;
 }
-.section {
+.game-list {
     display: flex;
     gap: 32px;
 }
-.games1 {
+.game_text {
     color: #FFF;
     font-family: Montserrat;
     font-size: 24px;
