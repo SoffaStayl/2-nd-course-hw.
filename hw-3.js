@@ -13,9 +13,7 @@ if (d > 100 || e > 100) {
 } else { alert ('Неверно')};
 let a = '2';
 let b = '3';
-let num = Number(a);
-let sum = Number(b);
-alert = (a + b);
+alert = (+a + +b);
 let monthNumber = prompt ('Введите номер месяца');
 switch (monthNumber) {
     case '1': case '2': case '12':
