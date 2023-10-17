@@ -4,21 +4,21 @@ while (i <= n) {
     alert('Привет');
     i++;
 }
-while (i <= 5) {
-    console.log (i);
-    i++;
+while (a <= 5) {
+    console.log (a);
+    a++;
 
 }
 let obj = { 'Коля': 200, 'Вася':300, 'Петя':400};
 for (let key in obj) {
     document.write (key + 'зарплата' + obj[key] + 'долларов');
 }
-for (let n = 1000; n <= 50; n++) {
-    let num = (n / 2)
-    alert (num);
-}let fridey = 1;
-for (let dayNumber = fridey; dayNumber++;) {
-    if(isLeap(dayNumber)) {
+for (let n = 1000; num < 50; num = 1000 ) {
+    Sistem.out.println(num);
+}
+let friday = 1;
+for (let dayNumber = friday; dayNumber <= 31; dayNumber++) {
+    if(dayNumber % 7 == 0) {
         console.log (`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
         break;
     }
