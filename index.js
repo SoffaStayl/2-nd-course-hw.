@@ -1,4 +1,4 @@
-function Season (game) {
+function Season () {
     let game = prompt ('Введите номер месяца');
     if (game = 12 || 1 || 2){
     return "Зима"
