@@ -24,19 +24,18 @@ function square_return (number) {
 console.log (square_return (5));
 function user (age) {
     let f = prompt ('Сколько вам лет?');
-    if ( age < 0) {
+    if ( f < 0) {
         alert ('Вы ввели неправильное значение');
-    } else if ( age <= 12) {
+    } else if ( f <= 12) {
         alert ('Привет, друг!');
-    } else if ( age >= 13) {
+    } else if ( f >= 13 ) {
         alert ('Добро пожаловать!')
     }
 }
 function printnumber (g, k) {
-    let g = 10;
-    let k = 25;
-    isNaN (g, k);
-    if ( printnumber === false) {
+   let result = isNaN (g);
+   let print = isNaN (k);
+    if ( result === false || print === false) {
         alert ('Одно или оба значения не являются числом')
     } else {
         let sum = g * k;
@@ -53,23 +52,23 @@ function number_cub () {
         return `${z} в кубе равняется ${cube}` ;
     }
 }
-function getRectangleArea () {
+function getCircleArea () {
     return this.radius * this.pi;
 }
-function getRectanglePerimeter () {
+function getCirclePerimeter () {
     return this.radius * this.pi * 2;
 }
 const circle1 = {
     radius: 10,
     pi: 3.14,
-    getArea: getRectangleArea,
-    getPerimeter: getRectanglePerimeter,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
 };
 const circle2 = {
     radius: 5,
     pi: 3.14,
-    getArea: getRectangleArea,
-    getPerimeter: getRectanglePerimeter,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
 };
 console.log (circle1.getArea ());
 console.log (circle1.getPerimeter ());
