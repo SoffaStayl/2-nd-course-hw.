@@ -10,4 +10,4 @@ function Season () {
         return "Осень";
     }
 }
-alert (Season);
+// alert (Season);
