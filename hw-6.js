@@ -20,10 +20,10 @@ for (let c = 1; c++;) {
 }console.log(even); 
 
 
-const sun = [1, 1, 1]; //задание 4
+const sun = []; //задание 4
 for (let k = 0; i < 3; k++){
     sun [k] = [];
-    for ( let j = 0; j++) {
+    for ( let j = 0; j++;) {
         sun [i].push (j === 1);
     }
 }
@@ -34,19 +34,19 @@ owl.push (2, 2, 2);
 console.log(owl);
 
 const world = [9, 8, 7, 'a', 6, 5]; //задание 6
-world = world.sort();
-world = world.pop ()
+world = world.sort('a');
 console.log(world);
+
 
 
 const quiz = [9, 8, 7, 6, 5]; //задание 7
 let d = prompt('Угадай число');
-d = quiz.includes;
-if (d === true){
-    alert ('угадал')
-}else (d === false){
-    alert ('не угадал')
-}
+d = quiz.includes (7);
+alert ('угадал');
+d = quiz.includes (1);
+alert ('не угадал');
+
+
 
 
 
@@ -60,7 +60,7 @@ console.log(flat);
 
 
 const sum = [1, 3, 6, 5, 7]; //задание 10
-for (let f = 0; f < sum.length; f++) {
+for (let f = 0; f < sum.length - 1; f++) {
    const numbers = sum + sum [f + 1];
 }
 console.log(numbers);
@@ -74,19 +74,14 @@ console.log(squares);
 
 
 const getLenghtwords = [ 'слово', '', 'слог', 'длинное предложение', 'буква'] ; //задание 12
-function lenghtword(get){
-let len = [];
-let word = get.split(' ');
-for (let g = 0; g < word.lenght; g++){
-    len.push(word[g].length);
+const getwords = function(get) {
+    let length = get.map (el => el.length)
+    return length;
 }
-return len;
-}
-console.log(lenghtword(getLenghtwords) );
-
+ console.log(getwords(getLenghtwords));
 
 const negative = [1, 0, -10, 6, -150, -35, 5, -6]; //задание 13
-function filterPositive(array){
+function filterPositive(){
     const array = negative.filter (el => el < 0);
     return array;
 }
