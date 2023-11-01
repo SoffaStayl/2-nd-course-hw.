@@ -23,8 +23,8 @@ for (let c = 1; c++;) {
 const sun = []; //задание 4
 for (let k = 0; i < 3; k++){
     sun [k] = [];
-    for ( let j = 0; j++;) {
-        sun [i].push (j === 1);
+    for ( let j = 0; j < 3; j++) {
+        sun [k][j] = 1;
     }
 }
 console.log(sun);
@@ -34,17 +34,18 @@ owl.push (2, 2, 2);
 console.log(owl);
 
 const world = [9, 8, 7, 'a', 6, 5]; //задание 6
-world = world.sort('a');
+world = world.sort.pop('a');
 console.log(world);
 
 
 
 const quiz = [9, 8, 7, 6, 5]; //задание 7
-let d = prompt('Угадай число');
-d = quiz.includes (7);
-alert ('угадал');
-d = quiz.includes (1);
-alert ('не угадал');
+let d = Number(prompt('Угадай число'));
+if (quiz.includes(d)) {
+    alert('Угадал');
+}else {
+    alert('не угадал');
+}
 
 
 
