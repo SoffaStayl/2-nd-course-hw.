@@ -26,7 +26,7 @@ function words() {
         return gameStop ();
     } else {
         alert ('Вы не угадали!');
-        return gameStopn();
+        return gameStop ();
     }
 function gameStop() {
     let a = confirm ('Хочешь продолжить игру?');

@@ -48,9 +48,9 @@ console.log(getRandom(7));
 
 
 // Задание 7;
-function getRandomInt (minValue, maxValue){ 
+function getRandomInter (minValue, maxValue){ 
     return Math.round(Math.random() * (maxValue - minValue)) + minValue}
-    console.log (getRandomInt(25, 125));
+    console.log (getRandomInter(25, 125));
 
 
 // Задание 8;
@@ -69,14 +69,14 @@ const days = ['Понедельник', 'Вторник', 'Среда', 'Чет�
 const months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
 const sun = (currentDate) => {
     let time = (n) => {
-        if (n < 10) {
-            return n < "0" + n;
+        if (n < 31) {
+            return "0" + n;
         }
     }
     let date = time (currentDate.getDate());
     date = time (date);
    
-let month = months[currentDate.getMonth() - 1];
+let month = months[currentDate.getMonth()];
 let day = days[currentDate.getDay()];
 let hours = currentDate.getHours();
 if (hours < 10) {
@@ -92,4 +92,4 @@ if (sec < 10) {
 console.log (`Дата: ${date}.${month}.${currentDate.getFullYear()} - это ${day}.`);
 console.log (`Время: ${hours}:${min}:${sec}`);
 }
-sun(currentDate = new Date);
+sun(new Date());
