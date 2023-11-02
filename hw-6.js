@@ -21,7 +21,7 @@ for (let c = 1; c++;) {
 
 
 const sun = []; //задание 4
-for (let k = 0; i < 3; k++){
+for (let k = 0; k < 3; k++){
     sun [k] = [];
     for ( let j = 0; j < 3; j++) {
         sun [k][j] = 1;
@@ -34,7 +34,8 @@ owl.push (2, 2, 2);
 console.log(owl);
 
 const world = [9, 8, 7, 'a', 6, 5]; //задание 6
-world = world.sort.pop('a');
+world.sort('a');
+world.pop('a');
 console.log(world);
 
 
