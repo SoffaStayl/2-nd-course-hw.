@@ -10,14 +10,14 @@ console.log(arr.indexOf(4));
 
 
 const a = [1, 3, 5, 10, 20]; //задание 3
-console.log(a.join (''));
-const even = [];
-for (let b = 1; b++;) {
-    even[b]=[];
-for (let c = 1; c++;) {
-    even[b][c];
+const arrNumber = 30;
+let result = -1;
+for (let l = 0; l < a.length; l++) {
+    if (a[l] === arrNumber)  {
+        result = l;
+        break;
+    }
 }
-}console.log(even); 
 
 
 const sun = []; //задание 4
@@ -63,9 +63,9 @@ console.log(flat);
 
 const sum = [1, 3, 6, 5, 7]; //задание 10
 for (let f = 0; f < sum.length - 1; f++) {
-   const numbers = sum + sum [f + 1];
+   console.log(sum[f] + sum[f + 1]);
 }
-console.log(numbers);
+
 
 
 const products = [1, 6, 5, 8, 2, 3]; //задание 11
@@ -87,5 +87,5 @@ function filterPositive(){
     const array = negative.filter (el => el < 0);
     return array;
 }
-console.log(negative);
+console.log(filterPositive);
  
