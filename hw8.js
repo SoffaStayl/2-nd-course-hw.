@@ -19,23 +19,23 @@ console.log(people);
 
 //Задание 2;
 function isPositive(get){
-   if (get > 0) {
-    return get;
-   }
+   return get > 0;
 }
-function isMale (name, gender){
-if(gender === 'male'){
-    return name + gender;
-}
+function isMale (name){
+return name.gender === "male";
 }
 function filter (arr, rule){
 const arrResult = [];
-for (let i = 0; i < arr.lenght; i++){
-    if(rule(arr[i])){ arrResult.push(arr[i]);}
+for (let item of arr){
+    if(rule(item)) {
+        arrResult.push(item);
+    }
 }
 return arrResult;
 }
+
 console.log(filter([3, -4, 1, 9], isPositive));
+
 const human = [{name: 'Глеб', gender: 'male'},
 {name: 'Анна', gender: 'female'},
 {name: 'Олег', gender: 'male'},
