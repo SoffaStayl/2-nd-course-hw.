@@ -11,3 +11,29 @@ function Season () {
     } 
 }
 // alert (Season);
+
+function words() {
+    let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    arr = arr.sort(() => Math.random() - 0.5);
+    alert(arr);
+    let question1 = prompt('Чему равняется первый элемент массива?');
+    let question2 = prompt('Чему равняется последний элемент массива?');
+    if(arr[0].toLowerCase() === question1.toLowerCase() && arr[arr.length-1].toLowerCase() === question2.toLowerCase()) {
+        alert('Молодец, вы угадали, запомнили все слова!');
+        return gameStop ();
+    } else if (arr[0].toLowerCase() === question1.toLowerCase() || question2.toLowerCase() === arr[arr.length-1].toLowerCase()){
+        alert ('Вы были близки к победе!');
+        return gameStop ();
+    } else {
+        alert ('Вы не угадали!');
+        return gameStop ();
+    }
+function gameStop() {
+    let a = confirm ('Хочешь продолжить игру?');
+    if (a === true) {
+        return (words());
+    } else {
+        alert('Спасибо за внимание!');
+    }
+}
+}
